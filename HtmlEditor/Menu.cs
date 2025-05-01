@@ -35,6 +35,13 @@ namespace HtmlEditor
                 Console.Write("|");
                 Console.Write("\n");
             }
+
+            Console.Write("+");
+            for (int i = 0; i <= 30; i++)
+            {
+                Console.Write("-");
+            }
+            Console.Write("+");
         }
     
         public static void WriteOptions()
@@ -63,7 +70,7 @@ namespace HtmlEditor
             switch(option)
             {
                 case 1: Editor.Show(); break;
-                case 2: Console.WriteLine("View"); break;
+                case 2: Viewer.Show(""); break;
                 case 0: 
                     {
                         Console.Clear();

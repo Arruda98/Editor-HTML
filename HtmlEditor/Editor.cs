@@ -27,6 +27,7 @@ namespace HtmlEditor
 
             Console.WriteLine("-----------");
             Console.WriteLine(" Deseja salvar o arquivo?");
+            Viewer.Show(file.ToString());
         }
     }
 }
